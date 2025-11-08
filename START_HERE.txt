@@ -1,0 +1,255 @@
+================================================================================
+           FACE RECOGNITION ATTENDANCE SYSTEM
+                    QUICK START GUIDE
+================================================================================
+
+WELCOME! This guide will get you started in 5 minutes.
+
+================================================================================
+STEP 1: OPEN THE APPLICATION
+================================================================================
+
+1. Find the file: AttendanceSystem.exe
+2. Double-click it to open
+
+FIRST TIME ONLY:
+- If you see a security warning, click "More info" then "Run anyway"
+  (This is normal for new applications - it's safe!)
+- First startup may take 30-60 seconds (downloading emotion models)
+- After first time, it opens in 3-5 seconds
+
+A window will open with 4 tabs:
+- Live Recognition
+- Enrollment
+- Records
+- Dashboard
+
+================================================================================
+STEP 2: ENROLL PEOPLE (First Time Setup)
+================================================================================
+
+Before the system can recognize anyone, you need to enroll them:
+
+1. Click the "Enrollment" tab at the top
+2. In the "Name" box, type the person's name
+3. Click the blue "Start Enrollment" button
+4. The camera will turn on - position the person's face clearly in view
+5. When "Face detected" appears, press the SPACEBAR on your keyboard
+6. Repeat pressing SPACEBAR 5 times total
+7. You'll see "Enrollment complete!" when done
+8. The person is now enrolled!
+
+TIPS FOR BEST RESULTS:
+✓ Good lighting (face clearly visible)
+✓ Look directly at camera
+✓ No sunglasses or face coverings
+✓ Capture from slightly different angles (turn head a little each time)
+
+REPEAT for each person you want to track.
+
+================================================================================
+STEP 3: START TAKING ATTENDANCE
+================================================================================
+
+Now you can start automatic attendance tracking:
+
+1. Click the "Live Recognition" tab at the top
+2. Click the green "Start Recognition" button
+3. The camera activates and starts looking for faces
+4. When someone enrolled appears:
+   - Their name appears
+   - After 3 seconds, their emotion is shown
+   - Attendance is automatically logged
+5. Leave it running - it tracks everyone automatically!
+
+You'll see attendance entries appear in the "Recent Attendance" table.
+
+TO STOP: Click the red "Stop Recognition" button
+
+================================================================================
+STEP 4: VIEW ATTENDANCE RECORDS
+================================================================================
+
+To see who attended and when:
+
+1. Click the "Records" tab
+2. You'll see a table with all attendance entries:
+   - Name
+   - Emotion
+   - Time/Date
+
+FILTER RECORDS:
+- Use "From" and "To" dates to select date range
+- Type a name in the search box to find specific person
+- Click "Apply Filter" to filter
+
+EXPORT DATA:
+- Click "Export to CSV" for Excel-compatible file
+- Click "Export to Excel" for formatted Excel file
+- Choose where to save the file
+
+================================================================================
+STEP 5: VIEW STATISTICS (Optional)
+================================================================================
+
+To see attendance trends and charts:
+
+1. Click the "Dashboard" tab
+2. Click the blue "Refresh Dashboard" button
+3. You'll see:
+   - Daily attendance trend chart
+   - Emotion distribution pie chart
+   - Statistics (total records, unique people, today's count)
+
+================================================================================
+DAILY USE - SIMPLE WORKFLOW
+================================================================================
+
+MORNING:
+1. Double-click AttendanceSystem.exe
+2. Go to "Live Recognition" tab
+3. Click "Start Recognition"
+4. Leave it running
+
+The system will:
+✓ Automatically detect enrolled people
+✓ Log their attendance once per day
+✓ Record their emotion
+✓ Show everything in real-time
+
+END OF DAY:
+1. Go to "Records" tab
+2. Export today's attendance to Excel
+3. Close the application (X button top-right)
+
+================================================================================
+TROUBLESHOOTING - COMMON ISSUES
+================================================================================
+
+PROBLEM: Camera shows black screen
+SOLUTION:
+- Make sure webcam is connected
+- Close other apps using the camera (Zoom, Skype, etc.)
+- Try restarting the application
+
+PROBLEM: Face not detected
+SOLUTION:
+- Ensure good lighting
+- Face the camera directly
+- Move closer to the camera
+- Ensure face is not obscured (no sunglasses, hat, etc.)
+
+PROBLEM: Person not recognized
+SOLUTION:
+- Re-enroll them with better lighting
+- Capture more samples (enroll again)
+- Ensure they look similar to enrollment photos
+
+PROBLEM: Application won't start
+SOLUTION:
+- Make sure you're double-clicking AttendanceSystem.exe
+- Try restarting your computer
+- Check that webcam is connected
+- Contact support
+
+PROBLEM: Slow performance
+SOLUTION:
+- Close other applications
+- Make sure you have at least 4GB RAM
+- Reduce number of enrolled people if possible
+
+PROBLEM: Windows security warning
+SOLUTION:
+- Click "More info"
+- Click "Run anyway"
+- This is normal for applications without Microsoft signature
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+✓ Data is saved automatically (enrollments and attendance)
+✓ Each person is logged only ONCE per day
+✓ Keep the application folder - contains your data!
+✓ Backup the "data" folder regularly
+
+DATA LOCATION:
+- All data is in the "data" folder next to AttendanceSystem.exe
+- enrollments.pkl = Enrolled people
+- attendance.csv = Attendance records
+
+BACKUP:
+- Copy the entire application folder to backup
+- Or just copy the "data" folder
+
+================================================================================
+KEYBOARD SHORTCUTS
+================================================================================
+
+SPACEBAR = Capture face sample during enrollment
+ESC = Close camera preview windows
+
+================================================================================
+SYSTEM REQUIREMENTS
+================================================================================
+
+✓ Windows 10 or Windows 11
+✓ Webcam (built-in laptop camera or USB webcam)
+✓ 4GB RAM minimum (8GB recommended)
+✓ Internet connection (first run only, for downloading models)
+
+================================================================================
+NEED MORE HELP?
+================================================================================
+
+For detailed instructions:
+- Open "User_Guide.pdf" (if included)
+- See WINDOWS_SETUP.md for technical details
+- See TROUBLESHOOTING.md for more solutions
+
+Contact Support:
+[Add your contact information here]
+Email: your.email@example.com
+Phone: Your phone number
+
+================================================================================
+TIPS FOR SUCCESS
+================================================================================
+
+1. ENROLL WITH GOOD LIGHTING
+   - Best: Natural daylight or bright room lighting
+   - Avoid: Backlighting, shadows, dim rooms
+
+2. ENROLL MULTIPLE ANGLES
+   - Capture face looking slightly left, center, right
+   - This improves recognition accuracy
+
+3. CONSISTENT APPEARANCE
+   - If person usually wears glasses, enroll with glasses
+   - If appearance changes significantly, re-enroll
+
+4. POSITIONING
+   - Keep face 1-3 feet from camera
+   - Center face in camera view
+   - Ensure full face is visible
+
+5. EMOTION DETECTION
+   - Works best with clear, well-lit faces
+   - Shows: happy, sad, angry, fear, surprise, neutral, disgust
+   - Takes 3 seconds after recognition to analyze
+
+================================================================================
+THAT'S IT! YOU'RE READY TO GO!
+================================================================================
+
+Remember:
+1. Double-click AttendanceSystem.exe
+2. Enroll people (Enrollment tab)
+3. Start Recognition (Live Recognition tab)
+4. View Records (Records tab)
+
+Questions? Contact support (details above)
+
+Enjoy your automated attendance tracking!
+
+================================================================================
