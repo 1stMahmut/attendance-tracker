@@ -1,0 +1,91 @@
+# Windows-Compatible Requirements File
+# Updated with correct package versions for Windows installation
+# Last updated: 2025-11-08
+
+# Core Computer Vision
+opencv-python-headless==4.12.0.88
+
+# Face Recognition (install dlib FIRST - see notes below)
+face-recognition==1.3.0
+
+# Emotion Detection
+deepface==0.0.95
+
+# Data Processing (CORRECTED VERSIONS)
+# Note: Original had pandas==2.3.3 and numpy==2.2.6 which don't exist
+pandas>=2.2.0,<3.0.0
+numpy>=2.0.0,<3.0.0
+
+# GUI Framework
+PyQt5==5.15.11
+
+# Visualization
+matplotlib>=3.9.0,<4.0.0
+seaborn>=0.13.0,<1.0.0
+
+# File Export
+openpyxl>=3.1.0,<4.0.0
+reportlab>=4.2.0,<5.0.0
+
+# Image Processing
+Pillow>=12.0.0,<13.0.0
+
+# Face Recognition Engine
+# WARNING: dlib requires Visual C++ Build Tools on Windows
+# See WINDOWS_COMPATIBILITY_ANALYSIS.md for installation instructions
+# Recommended: Use pre-built wheel from https://github.com/jloh02/dlib/releases
+dlib>=19.22.0
+
+# Deep Learning Backend (CORRECTED VERSION)
+# Note: Original had tensorflow==2.20.0 which doesn't exist
+# Latest stable is 2.15.x
+tensorflow>=2.15.0,<2.16.0
+
+# ============================================================================
+# INSTALLATION NOTES FOR WINDOWS
+# ============================================================================
+#
+# IMPORTANT: Install in this order to avoid issues!
+#
+# 1. Install Visual C++ Build Tools (for dlib):
+#    Download: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+#    Select: "Desktop development with C++"
+#
+# 2. Install CMake (for dlib):
+#    Download: https://cmake.org/download/
+#    Add to PATH during installation
+#
+# 3. Create virtual environment:
+#    python -m venv venv
+#    venv\Scripts\activate
+#
+# 4. Upgrade pip:
+#    python -m pip install --upgrade pip
+#
+# 5. Install dlib (CRITICAL - use pre-built wheel for easier installation):
+#    # For Python 3.10 64-bit:
+#    pip install https://github.com/jloh02/dlib/releases/download/v19.22/dlib-19.22.99-cp310-cp310-win_amd64.whl
+#
+#    # Or try pip (may fail without build tools):
+#    pip install dlib
+#
+# 6. Install all other packages:
+#    pip install -r requirements_windows.txt
+#
+# ALTERNATIVE: Use Conda (EASIER):
+#    conda create -n attendance python=3.10
+#    conda activate attendance
+#    conda install -c conda-forge dlib
+#    pip install -r requirements_windows.txt
+#
+# TROUBLESHOOTING:
+#    - If numpy 2.x causes issues: pip install "numpy>=1.21.0,<2.0.0"
+#    - If dlib fails: Use conda or pre-built wheel
+#    - If TensorFlow is too large: Use tensorflow-cpu
+#
+# For detailed help, see:
+#    - WINDOWS_SETUP.md
+#    - WINDOWS_COMPATIBILITY_ANALYSIS.md
+#    - TROUBLESHOOTING.md
+#
+# ============================================================================
